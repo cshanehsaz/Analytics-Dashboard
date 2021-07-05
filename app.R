@@ -11,11 +11,16 @@
 #make more in depth user acquisition model
 #   number of games to cash out, minimum amount to cash out, only top % of players can cash out
 
+install.packages(shiny)
+install.packages(shinydashboard)
+install.packages(ggplot2)
+install.packages(scales)
 library(shiny)
 require(shinydashboard)
 library(ggplot2)
-library(dplyr)
-library(formattable)
+library(scales)
+#library(dplyr)
+#library(formattable)
 source("accuracymodel.R")
 source("revmodel1.R")
 source("revmodelShiny.R")
